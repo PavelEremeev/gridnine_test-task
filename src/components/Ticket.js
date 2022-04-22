@@ -13,7 +13,7 @@ function Ticket() {
 					<h2 className='ticket__airline-title'>POLISH</h2>
 					<div className='ticket__header-wrapper'>
 						<p className='ticket__price'>123213 P</p>
-						<span className='ticket__price-desription'>Стоимость для одного взрослого билета</span>
+						<span className='ticket__price-desription'>Стоимость для одного взрослого пассажира</span>
 					</div>
 				</div>
 				<div className='ticket__section'>
@@ -52,7 +52,9 @@ function Ticket() {
 					<p className='ticket__stops'>1 пересадка</p>
 				</div>
 				<p className='ticket__airline-info'>Рейс выполняет:</p>
+				<button className='ticket__button'>ВЫБРАТЬ</button>
 			</div>
+
 		</article>
 	);
 }
