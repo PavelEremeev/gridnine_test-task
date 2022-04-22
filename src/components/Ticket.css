@@ -1,0 +1,121 @@
+.ticket {}
+
+.ticket__wrapper {
+	display: flex;
+	flex-direction: column;
+	max-width: 700px;
+	margin: auto;
+}
+
+.ticket__header {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #00b0ff;
+	color: white;
+}
+
+.ticket__airline-title {
+	margin: 10px;
+}
+
+.ticket__header-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	margin: 6px;
+}
+
+.ticket__price {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0;
+}
+
+.ticket__price-desription {
+	font-size: 10px;
+}
+
+.ticket__section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-bottom: 1px solid gainsboro;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-left: 10px;
+}
+
+.ticket__title {
+	font-weight: normal;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.ticket__title:last-child {
+	margin-left: 10px;
+	margin-right: 0px;
+}
+
+.ticket__title-id {
+	color: #00b0ff;
+}
+
+
+.ticket__flight-direction {
+	color: #00b0ff;
+	margin: 5px;
+}
+
+.ticket__date-section {
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-left: 10px;
+	flex-direction: column;
+	display: flex;
+
+}
+
+
+.ticket__date-wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.ticket__date-container {
+	display: flex;
+	align-items: center;
+}
+
+.ticket__hours-date {
+	font-size: 21px;
+	margin: 0;
+}
+
+.ticket__week-date {
+	font-size: 16px;
+	color: #00b0ff;
+	margin: 0;
+}
+
+
+.ticket__duration {
+	margin: 10px 155px 10px
+}
+
+.ticket__stops {
+	color: orange;
+	align-self: center;
+	margin: 5px;
+}
+
+.ticket__airline-info {
+	margin: 5px 15px 5px 15px;
+	padding-left: 10px;
+
+}

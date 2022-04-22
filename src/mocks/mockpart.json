@@ -1,0 +1,115 @@
+{
+	"duration": 735,
+	"segments": [
+		{
+			"classOfServiceCode": "I",
+			"classOfService": {
+				"uid": "BUSINESS",
+				"caption": "Бизнес"
+			},
+			"departureAirport": {
+				"uid": "SVO",
+				"caption": "ШЕРЕМЕТЬЕВО"
+			},
+			"departureCity": {
+				"uid": "MOW",
+				"caption": "Москва"
+			},
+			"aircraft": {
+				"uid": "321",
+				"caption": "АЭРОБУС321"
+			},
+			"travelDuration": 245,
+			"arrivalCity": {
+				"uid": "PAR",
+				"caption": "ПАРИЖ"
+			},
+			"arrivalDate": "2020-08-18T09:15:00",
+			"flightNumber": "1655",
+			"techStopInfos": [],
+			"departureDate": "2020-08-18T06:10:00",
+			"stops": 0,
+			"servicesDetails": {
+				"freeCabinLuggage": {},
+				"paidCabinLuggage": {},
+				"tariffName": "BUSINESS FLEX",
+				"fareBasis": {
+					"ADULT": "IS50AENB"
+				},
+				"freeLuggage": {
+					"ADULT": {
+						"pieces": 2,
+						"nil": false,
+						"unit": "шт"
+					}
+				},
+				"paidLuggage": {}
+			},
+			"airline": {
+				"uid": "AF",
+				"caption": "Air France",
+				"airlineCode": "AF"
+			},
+			"starting": true,
+			"arrivalAirport": {
+				"uid": "CDG",
+				"caption": "ПАРИЖ, ШАРЛЬ ДЕ ГОЛЛЬ"
+			}
+		},
+		{
+			"classOfServiceCode": "I",
+			"classOfService": {
+				"uid": "BUSINESS",
+				"caption": "Бизнес"
+			},
+			"departureAirport": {
+				"uid": "CDG",
+				"caption": "ПАРИЖ, ШАРЛЬ ДЕ ГОЛЛЬ"
+			},
+			"departureCity": {
+				"uid": "PAR",
+				"caption": "ПАРИЖ"
+			},
+			"aircraft": {
+				"uid": "320",
+				"caption": "А320"
+			},
+			"travelDuration": 85,
+			"arrivalCity": {
+				"uid": "LON",
+				"caption": "ЛОНДОН"
+			},
+			"arrivalDate": "2020-08-18T16:25:00",
+			"flightNumber": "1280",
+			"techStopInfos": [],
+			"departureDate": "2020-08-18T16:00:00",
+			"stops": 0,
+			"servicesDetails": {
+				"freeCabinLuggage": {},
+				"paidCabinLuggage": {},
+				"tariffName": "BUSINESS FLEX",
+				"fareBasis": {
+					"ADULT": "IS50AENB"
+				},
+				"freeLuggage": {
+					"ADULT": {
+						"pieces": 2,
+						"nil": false,
+						"unit": "шт"
+					}
+				},
+				"paidLuggage": {}
+			},
+			"airline": {
+				"uid": "AF",
+				"caption": "Air France",
+				"airlineCode": "AF"
+			},
+			"starting": false,
+			"arrivalAirport": {
+				"uid": "LHR",
+				"caption": "Лондон, Хитроу"
+			}
+		}
+	]
+}
