@@ -1,10 +1,16 @@
 import './App.css';
-import Ticket from './Ticket';
+
+import TicketList from './TicketList';
+
+import flights from '../mocks/flights.json'
+
+const flightsData = flights.result.flights
+console.log(flightsData)
 
 function App() {
 	return (
 		<div className='App'>
-			<Ticket></Ticket>
+			<TicketList flights={flightsData} />
 		</div>
 	);
 }
