@@ -26,6 +26,30 @@ function TicketLegs(props) {
 		arrivalDate = secondSegment.arrivalDate
 	}
 
+
+	function durationCalc(duration) {
+		const hours = ((duration / 60).toString()).split('.')[0];
+		const minutes = (duration % 60);
+		return `${hours} ч. ${minutes} мин.`;
+	}
+
+	function formatDate(JSONdate, str) {
+		const monthsArr = ['Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Ноября', 'Декабря'];
+		const time = JSONdate.substring(JSONdate.indexOf('T') + 1, JSONdate.indexOf('T') + 6);
+		const date = JSONdate.substring(8, 10);
+		let month;
+		monthsArr.forEach((element, i) => {
+			if (i + 1 === Number(JSONdate.substring(5, 7))) {
+				month = element.toLowerCase();
+			}
+		});
+		if (str === 'departureDate') {
+			return `${time} ${date} ${month}`
+		} else {
+			return `${date} ${month} ${time}`
+		}
+	}
+
 	return (
 		<>
 			<div className='ticket__section'>
@@ -37,11 +61,10 @@ function TicketLegs(props) {
 			</div>
 			<div className='ticket__date-section'>
 				<div className='ticket__date-wrapper'>
-					<p className='ticket__hours-date'>{departureDate}</p>
-					<p className='ticket__week-date'>{'18 авг. вт'}</p>
-					<p className='ticket__duration'>{flightDuration}</p>
-					<p className='ticket__week-date'>{'19 авг. вт'}</p>
-					<p className='ticket__hours-date'>{arrivalDate}</p>
+					<p className='ticket__hours-date'>{formatDate(departureDate, 'departureDate')}</p>
+					{/* <p className='ticket__week-date'></p> */}
+					<p className='ticket__duration'>{durationCalc(flightDuration)}</p>
+					<p className='ticket__hours-date'>{formatDate(arrivalDate, 'arrivalDate')}</p>
 				</div>
 				<p className='ticket__stops'>{secondSegment ? '1 пересадка' : ''}</p>
 			</div>
