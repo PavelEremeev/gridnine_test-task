@@ -1,0 +1,21 @@
+.ticket-list_wrapper {}
+
+.ticket-list__button {
+	color: black;
+	outline: none;
+	border: none;
+	background-color: whitesmoke;
+	width: 50%;
+	height: 40px;
+	border-radius: 3px;
+	font-size: 17px;
+	transition: .2s ease;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.ticket-list__button {
+	cursor: pointer;
+	opacity: 0.7;
+	transition: .2s ease;
+}
