@@ -54,10 +54,10 @@ function TicketLegs(props) {
 		<>
 			<div className='ticket__section'>
 				{departureCity ? <h3 className='ticket__title'>{departureCity.caption}</h3> : ''}
-				{departureAirport ? <p className='ticket__title-id'>{departureAirport.caption + ' ' + departureAirport.uid}</p> : ''}
+				{departureAirport ? <p className='ticket__title-id'>{departureAirport.caption + ' ' + `(${departureAirport.uid})`}</p> : ''}
 				<span className='ticket__flight-direction'>&rarr;</span>
-				{arrivalAirport ? <p className='ticket__title-id'>{arrivalAirport.uid + ' ' + arrivalAirport.caption}</p> : ''}
 				{arrivalCity ? <h3 className='ticket__title'>{arrivalCity.caption}</h3> : ''}
+				{arrivalAirport ? <p className='ticket__title-id'>{arrivalAirport.caption + ' ' + `(${arrivalAirport.uid})`}</p> : ''}
 			</div>
 			<div className='ticket__date-section'>
 				<div className='ticket__date-wrapper'>
