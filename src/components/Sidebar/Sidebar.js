@@ -1,17 +1,18 @@
 import React from "react";
 
+import SortBlock from "./SortBlock";
 import './Sidebar.css';
 
 function Sidebar(props) {
 	return (
-		<section className='sidebar'>
+		<aside className='sidebar'>
 			<div className='sidebar__wrapper'>
-				<h4 className='sidebar__caption'>Сортировать</h4>
+				<SortBlock />
 				<h4 className='sidebar__caption'>Фильтровать</h4>
 				<h4 className='sidebar__caption'>Цена</h4>
 				<h4 className='sidebar__caption'>Авиакомпании</h4>
 			</div>
-		</section>
+		</aside>
 	)
 }
 

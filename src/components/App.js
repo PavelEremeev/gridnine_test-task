@@ -1,9 +1,9 @@
-import './App.css';
-
-import TicketList from './TicketList';
-
+import React from 'react';
+import TicketList from './Ticket/TicketList';
+import Sidebar from './Sidebar/Sidebar';
 import flights from '../mocks/flights.json'
-import Sidebar from './Sidebar';
+
+import './App.css';
 
 const flightsData = flights.result.flights
 console.log(flightsData)
