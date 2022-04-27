@@ -7,6 +7,7 @@ function SortBlock({ onSort, setSortingValue }) {
 	function sortHandler(evt) {
 		setSortingValue(evt.target.value)
 		onSort(evt.target.value)
+		console.log(evt.target.value)
 	}
 
 	return (
@@ -17,7 +18,7 @@ function SortBlock({ onSort, setSortingValue }) {
 					type='radio'
 					id='highPrice'
 					name='sort'
-					value='highPrice'
+					value='HIGH'
 					onChange={sortHandler}
 				/>
 				<label htmlFor='highPrice'>- по возрастанию цены</label>
@@ -27,7 +28,7 @@ function SortBlock({ onSort, setSortingValue }) {
 					type='radio'
 					id='lowPrice'
 					name='sort'
-					value='lowPrice'
+					value='LOW'
 					onChange={sortHandler}
 				/>
 				<label htmlFor='lowPrice'>- по убыванию цены</label>
@@ -37,7 +38,7 @@ function SortBlock({ onSort, setSortingValue }) {
 					type='radio'
 					id='lowTime'
 					name='sort'
-					value='lowTime'
+					value='TIME'
 					onChange={sortHandler}
 				/>
 				<label htmlFor='lowTime'>- по времени в пути</label>

@@ -12,7 +12,8 @@ function PriceBlock({ setFilteringPrice, onFilteredPrice, price }) {
 	const minPrice = useRef(0)
 	const highPrice = useRef(Infinity)
 
-	function priceHandler(evt) {
+	function lowPriceHandler(evt) {
+		console.log(highPrice)
 		if (highPrice.current.value === '') {
 			setFilteringPrice({
 				...price,
@@ -23,37 +24,27 @@ function PriceBlock({ setFilteringPrice, onFilteredPrice, price }) {
 				...price,
 				minPrice: +evt.target.value,
 			})
-		} if (minPrice.current.value === '') {
-			setFilteringPrice({
-				...price,
-				minPrice: 0,
-			})
-		} if (evt.target.value >= price.minPrice) {
-			setFilteringPrice((price) => ({
-				...price,
-				maxPrice: +evt.target.value,
-			}))
 		} else {
 			return;
 		}
 	}
 
-	//   const highPriceHandler = (evt) => {
-	// 	if (minPrice.current.value === '') {
-	// 		setFilteringPrice({
-	// 		...price,
-	// 		minPrice: 0,
-	// 	  })
-	// 	}
-	// 	if (evt.target.value >= price.minPrice) {
-	// 		setFilteringPrice((price) => ({
-	// 		...price,
-	// 		maxPrice: +evt.target.value,
-	// 	  }))
-	// 	} else {
-	// 	  return
-	// 	}
-	//   }
+	function highPriceHandler(evt) {
+		if (minPrice.current.value === '') {
+			setFilteringPrice({
+				...price,
+				minPrice: 0,
+			})
+		}
+		if (evt.target.value >= price.minPrice) {
+			setFilteringPrice((price) => ({
+				...price,
+				maxPrice: +evt.target.value,
+			}))
+		} else {
+			return
+		}
+	}
 
 
 	return (
@@ -65,7 +56,7 @@ function PriceBlock({ setFilteringPrice, onFilteredPrice, price }) {
 				<input
 					type="number"
 					id="lowPrice"
-					onInput={priceHandler}
+					onInput={lowPriceHandler}
 					ref={minPrice}
 
 				/>
@@ -75,7 +66,7 @@ function PriceBlock({ setFilteringPrice, onFilteredPrice, price }) {
 				<input
 					type="number"
 					id="highPrice"
-					onInput={priceHandler}
+					onInput={highPriceHandler}
 					ref={highPrice}
 
 				/>
