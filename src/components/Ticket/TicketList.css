@@ -1,4 +1,8 @@
-.ticket-list_wrapper {}
+.ticket-list_wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
 .ticket-list__button {
 	color: black;
@@ -10,12 +14,15 @@
 	border-radius: 3px;
 	font-size: 17px;
 	transition: .2s ease;
-	margin-top: 10px;
+	margin-top: 0;
 	margin-bottom: 30px;
+	transition: .2s ease;
 }
 
-.ticket-list__button {
+.ticket-list__button:hover {
 	cursor: pointer;
-	opacity: 0.7;
 	transition: .2s ease;
+	transform: scale(1.03);
+	background-color: #00b0ff;
+	color: white;
 }

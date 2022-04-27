@@ -12,7 +12,7 @@ function Ticket(props) {
 		<article className='ticket'>
 			<div className='ticket__wrapper'>
 				<div className='ticket__header'>
-					<h2 className='ticket__airline-title'>{flight.carrier.caption}</h2>
+					<h3 className='ticket__airline-title'>{flight.carrier.caption}</h3>
 					<div className='ticket__header-wrapper'>
 						<p className='ticket__price'>{flight.price.total.amount} &#8381;</p>
 						<span className='ticket__price-desription'>Стоимость для одного взрослого пассажира</span>
