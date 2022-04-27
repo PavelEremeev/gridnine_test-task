@@ -20,7 +20,7 @@ function SortBlock({ onSort, setSortingValue }) {
 					value='highPrice'
 					onChange={sortHandler}
 				/>
-				<label for='highPrice'>- по возрастанию цены</label>
+				<label htmlFor='highPrice'>- по возрастанию цены</label>
 			</div>
 			<div className='sort__wrapper'>
 				<input
@@ -30,7 +30,7 @@ function SortBlock({ onSort, setSortingValue }) {
 					value='lowPrice'
 					onChange={sortHandler}
 				/>
-				<label for='lowPrice'>- по убыванию цены</label>
+				<label htmlFor='lowPrice'>- по убыванию цены</label>
 			</div>
 			<div className='sort__wrapper'>
 				<input
@@ -40,7 +40,7 @@ function SortBlock({ onSort, setSortingValue }) {
 					value='lowTime'
 					onChange={sortHandler}
 				/>
-				<label for='lowTime'>- по времени в пути</label>
+				<label htmlFor='lowTime'>- по времени в пути</label>
 			</div>
 		</form>
 	)

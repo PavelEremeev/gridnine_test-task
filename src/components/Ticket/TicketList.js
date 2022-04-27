@@ -3,8 +3,7 @@ import Ticket from './Ticket'
 
 import './TicketList.css'
 
-const TicketList = (props) => {
-	const { flights } = props
+const TicketList = ({ flights, loadMore }) => {
 
 	return (
 		<div className='ticket-list_wrapper'>
@@ -14,7 +13,7 @@ const TicketList = (props) => {
 					{...flight}
 				/>
 			)}
-			<button className='ticket-list__button'>Показать ещё</button>
+			<button className='ticket-list__button' onClick={loadMore}>Показать ещё</button>
 		</div>
 	)
 }
